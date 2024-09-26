@@ -2,7 +2,7 @@ import React from "react";
 
 function Experts() {
   return (
-    <div className="min-h-[90%] h-fit bg-[#FAEED1] bg-[url('./ExpertsPage_Image.png')] bg-no-repeat bg-[center_left] bg-[length:1500px_1500px] px-16 py-4 ">
+    <div className="min-h-[90%] h-fit bg-[#FAEED1] bg-[url('/ExpertsPage_Image.png')] bg-no-repeat bg-[center_left] bg-[length:1500px_1500px] px-16 py-4 ">
       <div className="w-full h-full rounded-l-3xl rounded-r-3xl backdrop-blur-sm bg-white/30 shadow-lg shadow-zinc-500/40 p-4  hover:shadow-2xl">
         <div className="h-[10%] text-gradient  font-semibold text-4xl p-2 text-center">
           List of Experts

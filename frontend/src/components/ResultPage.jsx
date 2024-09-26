@@ -2,7 +2,7 @@ import React from "react";
 
 function ResultPage() {
   return (
-    <div className="bg-[url('./ResultPage_bg.svg')] bg-[#fef0f3] bg-[length:1800px_1800px] bg-[center_right_10em] bg-no-repeat h-[90%] flex gap-8 px-16 py-12 text-black">
+    <div className="bg-[url('/ResultPage_bg.svg')] bg-[#fef0f3] bg-[length:1800px_1800px] bg-[center_right_10em] bg-no-repeat h-[90%] flex gap-8 px-16 py-12 text-black">
       <div className="h-full backdrop-blur-sm bg-white/30 rounded-l-3xl shadow-lg shadow-zinc-500/40 w-[30%]  hover:shadow-2xl">
         <img
           src="./resultPage_resume.webp"

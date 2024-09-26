@@ -3,7 +3,7 @@ import React from "react";
 
 function NewExpertPage() {
   return (
-    <div className="bg-[url('./NewExpertPage.svg')] bg-[#fff8e9] bg-[length:700px_1500px] bg-[center_left_5em] bg-no-repeat h-[90%] flex gap-8 px-16 py-4">
+    <div className="bg-[url('/NewExpertPage.svg')] bg-[#fff8e9] bg-[length:700px_1500px] bg-[center_left_5em] bg-no-repeat h-[90%] flex gap-8 px-16 py-4">
       <div className="w-[30%] h-full rounded-l-3xl backdrop-blur-sm shadow-lg shadow-zinc-500/40 bg-white/30 p-4  hover:shadow-2xl">
         <h2 className="text-black text-4xl font-semibold text-gradient py-2">
           Enter <span className="text-gradient">Your Best Expert Here</span>

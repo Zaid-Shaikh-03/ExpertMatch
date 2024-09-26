@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div className="bg-[url('./homePage_background_Image.svg')] bg-[#f6eee3] bg-contain bg-center h-[90%] flex gap-8 px-16 py-12">
+    <div className="bg-[url('/homePage_background_Image.svg')] bg-[#f6eee3] bg-contain bg-center h-[90%] flex gap-8 px-16 py-12">
       <div className="w-[30%] rounded-l-3xl backdrop-blur-sm shadow-lg shadow-zinc-500/40 bg-white/30 p-4 hover:shadow-2xl">
         <h2 className="text-black text-4xl font-semibold text-gradient py-2">
           Find <span className="text-gradient">Expert For Candidates</span>
