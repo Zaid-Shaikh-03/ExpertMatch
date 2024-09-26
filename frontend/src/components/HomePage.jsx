@@ -1,5 +1,6 @@
 import React from "react";
 import { FileInput, Label, TextInput } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -77,7 +78,9 @@ function HomePage() {
             </div>
             <div className="h-fit px-12">
               <button className="px-6 py-2 bg-[#795757] rounded-xl w-full  hover:shadow-2xl">
-                See The Result
+                <a className="w-full h-full" href="/resultPage">
+                  See The Result
+                </a>
               </button>
             </div>
           </form>

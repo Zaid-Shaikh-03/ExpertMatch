@@ -1,7 +1,10 @@
 import React from "react";
 import { Button, Navbar } from "flowbite-react";
+import { useLocation } from "react-router-dom";
 
 function NavBar() {
+  const { pathname } = useLocation();
+
   return (
     <div>
       <Navbar fluid className="py-4">
@@ -15,12 +18,34 @@ function NavBar() {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link href="/" active>
+          <Navbar.Link
+            href="/"
+            className={`text-lg ${pathname === "/" ? "active" : ""}`}
+          >
             Home
           </Navbar.Link>
-          <Navbar.Link href="/newExpertPage">Enter New Expert</Navbar.Link>
-          <Navbar.Link href="/experts">Experts</Navbar.Link>
-          <Navbar.Link href="#contact">Contact</Navbar.Link>
+          <Navbar.Link
+            href="/newExpertPage"
+            className={`text-lg ${
+              pathname === "/newExpertPage" ? "active" : ""
+            }`}
+          >
+            Enter New Expert
+          </Navbar.Link>
+          <Navbar.Link
+            href="/experts"
+            className={`text-lg ${
+              pathname === "/experts" ? "active" : ""
+            } active:bg-zinc-500`}
+          >
+            Experts
+          </Navbar.Link>
+          <Navbar.Link
+            href="#contact"
+            className={`text-lg ${pathname === "/contact" ? "active" : ""}`}
+          >
+            Contact
+          </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

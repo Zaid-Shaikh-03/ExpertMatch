@@ -8,12 +8,12 @@ function NewExpertPage() {
         <h2 className="text-black text-4xl font-semibold text-gradient py-2">
           Enter <span className="text-gradient">Your Best Expert Here</span>
         </h2>
-        <p className="text-zinc-800 text-justify text-lg leading-[19px] py-2">
+        <p className="text-zinc-800 text-justify text-lg leading-[25px] py-2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
           assumenda vero exercitationem, amet placeat, quidem sint aliquid
           tempora molestiae numquam ab vitae cumque ad optio?
         </p>
-        <div className="w-full h-[50%]">
+        <div className="w-full h-[60%]">
           <img
             src="./NewExpertPage_Image.png"
             alt=""
@@ -93,7 +93,7 @@ function NewExpertPage() {
             </div>
             <div className="h-[10%] px-24 py-2">
               <button className="px-6 py-2 bg-[#795757] rounded-xl w-[80%] ml-[9.5rem]  hover:shadow-2xl">
-                See The Result
+                <a href="/experts" className="w-full h-full cursor-pointer">Submit</a>
               </button>
             </div>
           </form>
