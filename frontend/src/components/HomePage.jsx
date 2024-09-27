@@ -1,15 +1,13 @@
-import React from "react";
-import { FileInput, Label, TextInput } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { FileInput, Label } from "flowbite-react";
 
 function HomePage() {
   return (
-    <div className="bg-[url('/homePage_background_Image.svg')] bg-[#f6eee3] bg-contain bg-center h-[90%] flex gap-8 px-16 py-12">
-      <div className="w-[30%] rounded-l-3xl backdrop-blur-sm shadow-lg shadow-zinc-500/40 bg-white/30 p-4 hover:shadow-2xl">
-        <h2 className="text-black text-4xl font-semibold text-gradient py-2">
+    <div className="bg-[url('/homePage_background_Image.svg')] bg-[#f6eee3] bg-contain bg-center h- xl:h-[90%] flex flex-col xl:flex-row gap-8 px-4 xl:px-16 py-6 xl:py-12 bg-no-repeat xl:bg-repeat">
+      <div className="w-full xl:w-[30%] rounded-l-3xl backdrop-blur-sm shadow-lg shadow-zinc-500/40 bg-white/30 p-4 hover:shadow-2xl rounded-r-3xl xl:rounded-r-none">
+        <h2 className="py-2 text-4xl font-semibold text-black text-gradient">
           Find <span className="text-gradient">Expert For Candidates</span>
         </h2>
-        <p className="text-zinc-800 text-justify py-2">
+        <p className="py-2 text-justify text-zinc-800">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
           assumenda vero exercitationem, amet placeat, quidem sint aliquid
           tempora molestiae numquam ab vitae cumque ad optio?
@@ -18,23 +16,23 @@ function HomePage() {
           <img
             src="./HomePage_icon.png"
             alt=""
-            className="h-full w-full object-contain"
+            className="object-contain w-full h-full"
           />
         </div>
       </div>
-      <div className="backdrop-blur-sm bg-white/30 w-[70%] shadow-lg shadow-zinc-500/40 flex flex-col rounded-r-3xl hover:shadow-2xl">
+      <div className="backdrop-blur-sm bg-white/30 w-full xl:w-[70%] shadow-lg shadow-zinc-500/40 flex flex-col rounded-l-3xl xl:rounded-l-none rounded-r-3xl hover:shadow-2xl">
         <div className=" h-[20%] p-4">
-          <h2 className="text-center text-3xl font-semibold  text-gradient ">
+          <h2 className="text-3xl font-semibold px-7 xl:text-center text-gradient ">
             Upload candidates resume here
           </h2>
-          <h3 className="text-center text-zinc-800 text-lg">
+          <h3 className="text-lg text-center text-zinc-800">
             find the best expert for candidates
           </h3>
         </div>
         <div className=" h-[80%]">
-          <form action="" className="h-full flex flex-col gap-4">
-            <div className=" h-[12%] flex px-12">
-              <p className="text-black self-center font-semibold">
+          <form action="" className="flex flex-col h-full gap-4">
+            <div className=" h-[12%] flex flex-col xl:flex-row px-4 xl:px-12">
+              <p className="self-start px-4 font-semibold text-black xl:self-center xl:px-0">
                 Enter name fo candidant:
               </p>
               <input
@@ -46,11 +44,11 @@ function HomePage() {
               <div className="flex w-[90%] h-full items-center justify-center ">
                 <Label
                   htmlFor="dropzone-file"
-                  className="flex h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 backdrop-blur-sm bg-white/30  hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                  className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer backdrop-blur-sm bg-white/30 hover:shadow-2xl dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600"
                 >
-                  <div className="flex flex-col items-center justify-center pb-6 pt-5">
+                  <div className="flex flex-col items-center justify-center pt-5 pb-6">
                     <svg
-                      className="mb-4 h-8 w-8 text-gray-500 dark:text-gray-400"
+                      className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -76,7 +74,7 @@ function HomePage() {
                 </Label>
               </div>
             </div>
-            <div className="h-fit px-12">
+            <div className="px-12 py-4 xl:py-0 h-fit">
               <button className="px-6 py-2 bg-[#795757] rounded-xl w-full  hover:shadow-2xl">
                 <a className="w-full h-full" href="/resultPage">
                   See The Result
